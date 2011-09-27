@@ -1,0 +1,5 @@
+javascript_compressor: closure
+
+javascripts:
+  boostrap-dropdown:
+    - _source/js/boostrap-dropdown.js

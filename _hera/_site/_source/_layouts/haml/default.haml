@@ -1,0 +1,31 @@
+!!! 5 
+%html
+  %head
+    %meta{'http-equiv' => 'content-type', :content => 'text/html; charset=utf-8'}/
+    %title Hello Mr. Hera
+    %meta{:name => 'description', :content => 'Hera'}/
+    %meta{:name => 'author', :content => 'Brian Connatser'}/
+    %link(rel="stylesheet" type="text/css" href="/css/bootstrap.css")
+    %link(rel="stylesheet" type="text/css" href="/css/style.css")
+  %body
+    .topbar
+      .fill
+        .container
+          %ul.nav
+            %li.active
+              %a(href="/index.html") Home
+            %li
+              %a(href="/about.html") About
+            %li
+              %a(href="/contact.html") Contact
+
+    .container
+      .content
+        .page-header
+          %h1
+            {{ page.title }}
+        .row
+          .span14
+            %p<= "{{ content }}"
+      %footer
+        %p<= "&copy; Hera 2011"

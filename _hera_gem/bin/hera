@@ -1,0 +1,31 @@
+#!/usr/bin/env ruby
+
+help = <<HELP
+Hera, a progressive, rapid deployment, static site generating tool.
+
+Basic Command Line Usage:
+  Hera                                                   # . -> ./_site
+  Hera <path to write generated site>                    # . -> <path>
+  Hera <path to source> <path to write generated site>   # <path> -> <path>
+  Hera import <importer name> <options>                  # imports posts using named import script
+  
+  Configuration is read from '<source>/_config.yml' but can be overriden
+  using the following options:
+
+HELP
+
+require 'optparse'
+require 'hera'
+
+exec = {}
+options = {}
+opts = OptionParser.new do |opts|
+  opts.banner = help
+
+  opts.on("--init", "Kick off that shit.") do
+    options['init']
+  end
+end
+
+# Read command line options into `options` hash
+opts.parse!

@@ -1,0 +1,16 @@
+---
+layout: default
+title: Hera
+---
+{% for post in site.posts limit:5 %}
+<div class='post'>
+  <h1>
+    <a href='{{ post.url }}'>{{post.title}}</a>
+  </h1>
+  <div class='body'>
+    {{ post.content | replace:'more start -->','' | replace:'<!-- more end','' }}
+  </div>
+  <br />
+  <br />
+</div>
+{% endfor %}

@@ -1,0 +1,6 @@
+javascript_compressor: closure
+gzip_assets: off
+
+stylesheets:
+  style:
+    - _source/css/style.css

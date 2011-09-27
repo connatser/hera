@@ -1,0 +1,59 @@
+h1. Hera
+
+h2. What is Hera?
+
+Hera is a mashup of several static website development frameworks and utilities. These include Jekyll, Haml, and Sass. All of these tools can be researched and installed separately, but Hera will install and get you going very quick. Jekyll doesn't support Haml or Sass by default, which is the main drive behind Hera. Hera will not only install Jekyll, Haml and Sass, but also provide you with a simple site directory with watchers and conversions. 
+
+* What is included?
+* Jekyll
+* Haml
+* Sass
+* Jammit
+* Guard
+* Guard-Rake
+* rb_event - a Growl plugin
+* Growl Notify
+
+
+h2. How to use Hera.
+
+...
+
+Your public site will be in @_site/_public@ to grab and place on your server.
+
+h3. Other workflows
+
+# cd into "_site"
+# run @rake parse_templates@ _will manually run the Haml and Sass compilers_
+# run @jekyll --server@ _will generate the public site and start a preview_
+
+h3. Minimizing Assets
+
+# cd into "_site"
+# Review _css_jammit.yml and _js_jammit.yml, add any css or js files needed.
+# Run @jammit -o _source/css -c _css_jammit.yml@ to minimize all css.
+# Run @jammit -o _source/js -c _js_jammit.yml@ to minimize all js.
+
+h2. Sample
+
+...
+
+h2. Props
+
+"Tom Preston-Werner : Jekyll":http://jekyllrb.com/
+"Mike Ferrier":http://mikeferrier.com/2011/04/29/blogging-with-jekyll-haml-sass-and-jammit/
+"Twitter : Bootstrap":http://twitter.github.com/bootstrap/
+"Haml":http://haml-lang.com/
+"Sass":http://sass-lang.com/
+"Jammit":http://documentcloud.github.com/jammit/
+"Guard":https://github.com/guard/guard
+"Guard-Rake":https://github.com/rubyist/guard-rake
+"Garth Braithwaite":http://twitter.com/garthdb : For moral support.
+
+h2. License
+
+Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
