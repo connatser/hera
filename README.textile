@@ -4,7 +4,7 @@ h2. What is Hera?
 
 Hera is a mashup of several static website development frameworks and utilities. These include Jekyll, Haml, and Sass. All of these tools can be researched and installed separately, but Hera will install and get you going very quick. Jekyll doesn't support Haml or Sass by default, which is the main drive behind Hera. Hera will not only install Jekyll, Haml and Sass, but also provide you with a simple site directory with watchers and conversions. 
 
-* What is included?
+h3. What is included?
 * Jekyll
 * Haml
 * Sass
@@ -13,7 +13,6 @@ Hera is a mashup of several static website development frameworks and utilities.
 * Guard-Rake
 * rb_event - a Growl plugin
 * Growl Notify
-
 
 h2. How to use Hera.
 
@@ -33,23 +32,7 @@ Generates the hera site
   @hera --generate@
     
 Deploy hera
-  @hera --deplo@
-...
-
-Your public site will be in @_site/_public@ to grab and place on your server.
-
-h3. Other workflows
-
-# cd into "_site"
-# run @rake parse_templates@ _will manually run the Haml and Sass compilers_
-# run @jekyll --server@ _will generate the public site and start a preview_
-
-h3. Minimizing Assets
-
-# cd into "_site"
-# Review _css_jammit.yml and _js_jammit.yml, add any css or js files needed.
-# Run @jammit -o _source/css -c _css_jammit.yml@ to minimize all css.
-# Run @jammit -o _source/js -c _js_jammit.yml@ to minimize all js.
+  @hera --deploy@
 
 h2. Sample
 
