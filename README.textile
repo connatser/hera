@@ -17,6 +17,23 @@ Hera is a mashup of several static website development frameworks and utilities.
 
 h2. How to use Hera.
 
+Install the gem:
+  @gem install hera@
+
+Install hera
+  @hera --install@
+  
+Initialize hera
+  @hera --init@
+  
+Start watching hera
+  @hera --watch@
+
+Generates the hera site
+  @hera --generate@
+    
+Deploy hera
+  @hera --deplo@
 ...
 
 Your public site will be in @_site/_public@ to grab and place on your server.

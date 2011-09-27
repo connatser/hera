@@ -1,7 +1,7 @@
 #!/usr/bin/env ruby
 
-class Hera
+class DeployHera
   def initialize
-    print "Hera!"
+    puts "Deploy Hera."
   end
 end

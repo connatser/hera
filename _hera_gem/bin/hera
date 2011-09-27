@@ -1,31 +1,72 @@
 #!/usr/bin/env ruby
 
+$:.unshift File.join(File.dirname(__FILE__), *%w[.. lib])
+
 help = <<HELP
 Hera, a progressive, rapid deployment, static site generating tool.
 
 Basic Command Line Usage:
-  Hera                                                   # . -> ./_site
-  Hera <path to write generated site>                    # . -> <path>
-  Hera <path to source> <path to write generated site>   # <path> -> <path>
-  Hera import <importer name> <options>                  # imports posts using named import script
-  
-  Configuration is read from '<source>/_config.yml' but can be overriden
-  using the following options:
+  hera --install        # Installs dependencies.
+  hera --init           # Initializes the hera structure.
+  hera --watch          # Starts the haml and sass watcher.
+  hera --generate       # Generates the jekyll site.
+  hera --deploy         # Deploys the site to your server.
 
 HELP
 
 require 'optparse'
 require 'hera'
+require 'init_hera'
+require 'install_hera'
+require 'watch_hera'
+require 'generate_hera'
+require 'deploy_hera'
 
 exec = {}
 options = {}
 opts = OptionParser.new do |opts|
   opts.banner = help
 
-  opts.on("--init", "Kick off that shit.") do
-    options['init']
+  opts.on("--deploy") do
+    options['deploy'] = true
   end
+  
+  opts.on("--generate") do
+    options['generate'] = true
+  end
+  
+  opts.on("--install") do
+    options['install'] = true
+  end
+
+  opts.on("--init") do
+    options['init'] = true
+  end
+  
+  opts.on("--watch") do
+    options['watch'] = true
+  end
+  
 end
 
-# Read command line options into `options` hash
 opts.parse!
+
+if options['deploy']
+  deploy_hera = DeployHera.new
+end
+
+if options['generate']
+  generate_hera = GenerateHera.new
+end
+
+if options['install']
+  install_hera = InstallHera.new
+end
+
+if options['init']
+  init_hera = InitHera.new
+end
+
+if options['watch']
+  watch_hera = WatchHera.new
+end

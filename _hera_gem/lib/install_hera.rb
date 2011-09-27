@@ -1,7 +1,7 @@
 #!/usr/bin/env ruby
 
-class Hera
+class InstallHera
   def initialize
-    print "Hera!"
+    system "bundle install"
   end
 end
