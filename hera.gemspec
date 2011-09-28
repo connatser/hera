@@ -10,7 +10,7 @@ Gem::Specification.new do |s|
   s.email = 'connatser@gmail.com'
   s.homepage = 'http://github.com/connatser/hera'
   s.summary = %q{Hera}
-  s.description = %q{Hera, a rapid website prototyping tool.}
+  s.description = %q{Hera, an elegant and easy to use static web site architecture.}
 
   s.add_development_dependency("rspec", "~>2.5.0")
 

@@ -8,6 +8,8 @@ h2. How to use Hera.
 
 Install the gem:
   @gem install hera@
+
+  - the hera gem is hosted on "rubygems.org/gems/hera":https://rubygems.org/gems/hera
   
 Initialize hera
   @hera --init@
