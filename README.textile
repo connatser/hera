@@ -16,18 +16,19 @@ Start watching hera
   @hera --watch@ - Starts watching your haml and sass directories, automatically compiling them.
 
 Minimize your assets
-  @hera --minimize@ - Runs Jammit to minimize your css and js scripts. -add any new css/js to _css_jammit.yml & _js_jammit.yml.
+  @hera --minimize@ - Runs Jammit to minimize your css and js scripts. - add any new css/js to _css_jammit.yml & _js_jammit.yml.
 
 Generates the hera site
   @hera --generate@ - Generates your Jekyll site and starts a preview at "http://localhost:4000":http://localhost:4000
     
 Deploy hera
-  @hera --deploy@ - Auto-uplods your site for you. -make sure to update ssh_user and remote_root in the site's RakeFile
+  @hera --deploy@ - Auto-uploads your site for you. -make sure to update ssh_user and remote_root in the site's RakeFile
 
 h2. Typical workflow
 
 # @gem install hera@
-# @hera --init@ to clone the core structure.
+# @cd@ to where you want to install the core structure, typically an empty directory.
+# @hera --init@ to install the core structure.
 # @hera --watch@ to start watching and auto-compiling your source.
 # Within @_source/_layouts@ you can edit the templates:
     ## @/haml@ contains the main Jekyll layout templates.
