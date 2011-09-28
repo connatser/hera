@@ -1,7 +1,10 @@
 #!/usr/bin/env ruby
 
+require 'rubygems'
+require 'github'
+
 class InitHera
   def initialize
-    puts "Init Hera."
+    system "gh clone connatser/hera_site ."
   end
 end
