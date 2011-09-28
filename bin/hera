@@ -15,6 +15,7 @@ Hera, a progressive, rapid deployment, static site generating tool.
 Basic Command Line Usage:
   hera --init           # Initializes the hera structure.
   hera --watch          # Starts the haml and sass watcher.
+  hera --minimize       # Minimizes your css and js scripts.
   hera --generate       # Generates the jekyll site.
   hera --deploy         # Deploys the site to your server.
 
@@ -28,7 +29,11 @@ opts = OptionParser.new do |opts|
   opts.on("--deploy") do
     options['deploy'] = true
   end
-  
+
+  opts.on("--minimize") do
+    options['minimize'] = true
+  end
+
   opts.on("--generate") do
     options['generate'] = true
   end
@@ -47,6 +52,10 @@ opts.parse!
 
 if options['deploy']
   deploy_hera = DeployHera.new
+end
+
+if options['minimize']
+  minimize_hera = MinimizeHera.new
 end
 
 if options['generate']

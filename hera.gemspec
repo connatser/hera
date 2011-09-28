@@ -34,6 +34,7 @@ Gem::Specification.new do |s|
       lib/hera/generate_hera.rb
       lib/hera/init_hera.rb
       lib/hera/watch_hera.rb
+      lib/hera/minimize_hera.rb
       Gemfile
     ]
 end
