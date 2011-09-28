@@ -18,9 +18,6 @@ h2. How to use Hera.
 
 Install the gem:
   @gem install hera@
-
-Install hera
-  @hera --install@
   
 Initialize hera
   @hera --init@

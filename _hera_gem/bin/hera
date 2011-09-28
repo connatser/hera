@@ -1,26 +1,24 @@
 #!/usr/bin/env ruby
-
 $:.unshift File.join(File.dirname(__FILE__), *%w[.. lib])
+
+begin
+  require 'optparse'
+  require 'hera'
+  rescue LoadError
+  require 'rubygems'
+  require 'hera'
+end
 
 help = <<HELP
 Hera, a progressive, rapid deployment, static site generating tool.
 
 Basic Command Line Usage:
-  hera --install        # Installs dependencies.
   hera --init           # Initializes the hera structure.
   hera --watch          # Starts the haml and sass watcher.
   hera --generate       # Generates the jekyll site.
   hera --deploy         # Deploys the site to your server.
 
 HELP
-
-require 'optparse'
-require 'hera'
-require 'init_hera'
-require 'install_hera'
-require 'watch_hera'
-require 'generate_hera'
-require 'deploy_hera'
 
 exec = {}
 options = {}
@@ -33,10 +31,6 @@ opts = OptionParser.new do |opts|
   
   opts.on("--generate") do
     options['generate'] = true
-  end
-  
-  opts.on("--install") do
-    options['install'] = true
   end
 
   opts.on("--init") do
@@ -57,10 +51,6 @@ end
 
 if options['generate']
   generate_hera = GenerateHera.new
-end
-
-if options['install']
-  install_hera = InstallHera.new
 end
 
 if options['init']
