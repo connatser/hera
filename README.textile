@@ -35,14 +35,14 @@ h2. Typical workflow
     ## @/posts@ contains the site posts.
     ## @/sass@ contains the site css templates
 # Once you are ready to deploy:
-    ## @CTRL+C to stop watching Hera"
+    ## @CTRL+C@ to stop watching Hera"
     ## @hera --generate@ to build the jekyll site.
-    ## @CTRL+C to stop Jekyll once you are ready to minimize.
+    ## @CTRL+C@ to stop Jekyll once you are ready to minimize.
     ## @hera --minimize@ to minimize the css and js assets prior to deploying.
        ### currently there is a bug that causes you to edit the _css_jammit.yml and _js_jammit.yml files before the minimizer will work.
     ## @hera --deploy@ to deploy your site, via rsync/ssh.
-        ## Please make sure to update your credentials in the top of @/RakeFile@
-# Send me feedback, critiques, cake, fork and contribute.
+        ### Please make sure to update your credentials in the top of @/RakeFile@
+# Send me feedback, critiques, cake, and most importantly: fork and contribute.
 
 h2. Working Sample
 
@@ -57,7 +57,8 @@ h2. Props
 "Jammit":http://documentcloud.github.com/jammit/
 "Guard":https://github.com/guard/guard
 "Guard-Rake":https://github.com/rubyist/guard-rake
-"Garth Braithwaite":http://twitter.com/garthdb : For moral support.
+"Github gem":https://github.com/defunkt/github-gem
+"Garth Braithwaite":http://twitter.com/garthdb, "Kevin Suttle":http://twitter.com/kevinsuttle & "Ben Borowski":http://twitter.com/typeoneerror : For moral support.
 
 h2. License
 
