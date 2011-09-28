@@ -2,17 +2,7 @@ h1. Hera
 
 h2. What is Hera?
 
-Hera is a mashup of several static website development frameworks and utilities. These include Jekyll, Haml, and Sass. All of these tools can be researched and installed separately, but Hera will install and get you going very quick. Jekyll doesn't support Haml or Sass by default, which is the main drive behind Hera. Hera will not only install Jekyll, Haml and Sass, but also provide you with a simple site directory with watchers and conversions. 
-
-h3. What is included?
-* Jekyll
-* Haml
-* Sass
-* Jammit
-* Guard
-* Guard-Rake
-* rb_event - a Growl plugin
-* Growl Notify
+Hera, from HydraulicLabs, is an elegant and easy to use static web site architecture. Implementing Jekyll, Haml, Sass, & Jammit to bring a static website to life fast. Hera was developed to reduce setup time, promote clean code, and instantly set up the typical dependencies when working with popular web frameworks.
 
 h2. How to use Hera.
 
@@ -38,7 +28,6 @@ h2. Sample
 h2. Props
 
 "Tom Preston-Werner : Jekyll":http://jekyllrb.com/
-"Mike Ferrier":http://mikeferrier.com/2011/04/29/blogging-with-jekyll-haml-sass-and-jammit/
 "Twitter : Bootstrap":http://twitter.github.com/bootstrap/
 "Haml":http://haml-lang.com/
 "Sass":http://sass-lang.com/
