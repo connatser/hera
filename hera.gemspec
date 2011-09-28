@@ -22,6 +22,7 @@ Gem::Specification.new do |s|
   s.add_runtime_dependency("jekyll", "~> 0.11.0")
   s.add_runtime_dependency("rb-fsevent", "~> 0.4.3.1")
   s.add_runtime_dependency("sass", "~> 3.1.7")
+  s.add_runtime_dependency("git", "~> 1.2.5")
 
   s.executables = ['hera']
   s.require_paths = %w[lib]

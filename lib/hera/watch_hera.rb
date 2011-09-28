@@ -2,6 +2,6 @@
 
 class WatchHera
   def initialize
-    puts "Watch Hera."
+    system "guard start"
   end
 end
