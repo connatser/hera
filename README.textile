@@ -2,7 +2,7 @@ h1. Hera
 
 h2. What is Hera?
 
-Hera, from HydraulicLabs, is an elegant and easy to use static web site architecture. Implementing Jekyll, Haml, Sass, & Jammit to bring a static website to life fast. Hera was developed to reduce setup time, promote clean code, and instantly set up the typical dependencies when working with popular web frameworks.
+"Hera":http://connatser.github.com/hera/, from HydraulicLabs, is an elegant and easy to use static web site architecture. Implementing Jekyll, Haml, Sass, & Jammit to bring a static website to life fast. Hera was developed to reduce setup time, promote clean code, and instantly set up the typical dependencies when working with popular web frameworks.
 
 h2. How to use Hera.
 
@@ -22,7 +22,7 @@ Generates the hera site
   @hera --generate@ - Generates your Jekyll site and starts a preview at "http://localhost:4000":http://localhost:4000
     
 Deploy hera
-  @hera --deploy@ - Auto-uploads your site for you. -make sure to update ssh_user and remote_root in the site's RakeFile
+  @hera --deploy@ - Auto-uploads your site for you. - make sure to update ssh_user and remote_root in the site's RakeFile
 
 h2. Typical workflow
 
@@ -59,7 +59,7 @@ h2. Props
 "Guard":https://github.com/guard/guard
 "Guard-Rake":https://github.com/rubyist/guard-rake
 "Github gem":https://github.com/defunkt/github-gem
-"Garth Braithwaite":http://twitter.com/garthdb, "Kevin Suttle":http://twitter.com/kevinsuttle & "Ben Borowski":http://twitter.com/typeoneerror : For moral support.
+"Garth Braithwaite":http://twitter.com/garthdb, "Kevin Suttle":http://twitter.com/kevinsuttle, "Todd Anderson":http://twitter.com/bustardcelly & "Ben Borowski":http://twitter.com/typeoneerror : For moral support.
 
 h2. License
 
