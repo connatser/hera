@@ -36,9 +36,9 @@ h2. Typical workflow
     ## @/posts@ contains the site posts.
     ## @/sass@ contains the site css templates
 # Once you are ready to deploy:
-    ## @CTRL+C@ to stop watching Hera"
-    ## @hera --generate@ to build the jekyll site.
-    ## @CTRL+C@ to stop Jekyll once you are ready to minimize.
+    ## @CTRL + C@ to stop watching Hera
+    ## @hera --generate@ to build the jekyll site and launch a preview at "http://localhost:4000":http://localhost:4000.
+    ## @CTRL + C@ to stop the Jekyll preview, once you are ready to minimize your assets.
     ## @hera --minimize@ to minimize the css and js assets prior to deploying.
        ### currently there is a bug that causes you to edit the _css_jammit.yml and _js_jammit.yml files before the minimizer will work.
     ## @hera --deploy@ to deploy your site, via rsync/ssh.
