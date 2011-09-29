@@ -19,6 +19,7 @@ GEM
       launchy (~> 0.3.7)
       text-format (= 1.0.0)
       text-hyphen (= 1.0.0)
+    growl (1.0.3)
     growl_notify (0.0.1)
       rb-appscript
     guard (0.7.0)
@@ -66,6 +67,7 @@ PLATFORMS
 
 DEPENDENCIES
   github (~> 0.6.2)
+  growl (~> 1.0.3)
   growl_notify (~> 0.0.1)
   guard (~> 0.7.0)
   guard-rake (~> 0.0.1)

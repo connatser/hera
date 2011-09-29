@@ -3,7 +3,7 @@ require "hera/version"
 
 Gem::Specification.new do |s|
   s.name = 'hera'
-  s.date = '2011-09-27'
+  s.date = '2011-09-29'
   s.version = Hera::VERSION
   s.platform = Gem::Platform::RUBY
   s.authors = ['Brian Connatser']
@@ -14,6 +14,8 @@ Gem::Specification.new do |s|
 
   s.add_development_dependency("rspec", "~>2.5.0")
 
+  s.add_runtime_dependency("github", "~> 0.6.2")
+  s.add_runtime_dependency("growl", "~> 1.0.3")
   s.add_runtime_dependency("growl_notify", "~> 0.0.1")
   s.add_runtime_dependency("guard", "~> 0.7.0")
   s.add_runtime_dependency("guard-rake", "~> 0.0.1")
@@ -22,10 +24,10 @@ Gem::Specification.new do |s|
   s.add_runtime_dependency("jekyll", "~> 0.11.0")
   s.add_runtime_dependency("rb-fsevent", "~> 0.4.3.1")
   s.add_runtime_dependency("sass", "~> 3.1.7")
-  s.add_runtime_dependency("github", "~> 0.6.2")
 
   s.executables = ['hera']
   s.require_paths = %w[lib]
+
   s.files = %w[
       lib/hera.rb
       lib/hera/base.rb
