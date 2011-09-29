@@ -1,6 +1,0 @@
-require 'hera/base'
-require 'hera/deploy_hera'
-require 'hera/generate_hera'
-require 'hera/init_hera'
-require 'hera/watch_hera'
-require 'hera/minimize_hera'
