@@ -60,6 +60,10 @@ h2. Typical workflow
         ### Please make sure to update your credentials in the top of @/RakeFile@
 # Send me feedback, critiques, cake, and most importantly: fork and contribute.
 
+h2. Templates
+
+Hera installs a core structure, already developed to fit a rapid workflow. This structure can be found and forked at "hera-site":https://github.com/connatser/hera_site. Future plans include the ability to allow developers to submit template structures to be used in Hera, for instance a basic blog, app or product site, etc.
+
 h2. Working Sample
 
 "Lift Aqueous":http://www.liftaqueous.com/
