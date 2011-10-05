@@ -1,5 +1,4 @@
 source :rubygems
-source "http://rubygems.org"
 
 gem "github", "~> 0.6.2"
 gem "growl", "~> 1.0.3"

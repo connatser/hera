@@ -10,13 +10,13 @@ Install the gem:
   @gem install hera@ - the hera gem is hosted on "rubygems.org/gems/hera":https://rubygems.org/gems/hera
   
 Initialize hera
-  @hera --init@ - Clones a copy of a base Hera structure for you to begin working your magic.
+  @hera --init@ - Clones a copy of a base Hera structure and autogen the configs.
   
 Start watching hera
   @hera --watch@ - Starts watching your haml and sass directories, automatically compiling them.
 
 Minimize your assets
-  @hera --minimize@ - Runs Jammit to minimize your css and js scripts. - add any new css/js to _css_jammit.yml & _js_jammit.yml.
+  @hera --minimize@ - Runs Jammit to minimize your css and js scripts. - add any new css/js to _assets.yml.
 
 Generates the hera site
   @hera --generate@ - Generates your Jekyll site and starts a preview at "http://localhost:4000":http://localhost:4000
@@ -43,7 +43,7 @@ h2. Typical workflow
 
 # @gem install hera@
 # @cd@ to where you want to install the core structure, typically an empty directory.
-# @hera --init@ to install the core structure.
+# @hera --init@ to install the core structure and generate the config files.
 # @hera --watch@ to start watching and auto-compiling your source.
 # Within @_source/_layouts@ you can edit the templates:
     ## @/haml@ contains the main Jekyll layout templates.
@@ -55,7 +55,7 @@ h2. Typical workflow
     ## @hera --generate@ to build the jekyll site and launch a preview at "http://localhost:4000":http://localhost:4000.
     ## @CTRL + C@ to stop the Jekyll preview, once you are ready to minimize your assets.
     ## @hera --minimize@ to minimize the css and js assets prior to deploying.
-       ### currently there is a bug that causes you to edit the _css_jammit.yml and _js_jammit.yml files before the minimizer will work.
+       ### currently there is a bug that causes you to edit the _asset.yml files before the minimizer will work.
     ## @hera --deploy@ to deploy your site, via rsync/ssh.
         ### Please make sure to update your credentials in the top of @/RakeFile@
 # Send me feedback, critiques, cake, and most importantly: fork and contribute.
