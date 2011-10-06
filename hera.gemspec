@@ -3,7 +3,7 @@ require "hera/version"
 
 Gem::Specification.new do |s|
   s.name = 'hera'
-  s.date = '2011-10-05'
+  s.date = '2011-10-06'
   s.version = Hera::VERSION
   s.platform = Gem::Platform::RUBY
   s.authors = ['Brian Connatser']
