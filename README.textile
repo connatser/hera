@@ -46,6 +46,9 @@ h2. Typical workflow
 # @gem install hera@
 # @cd@ to where you want to install the core structure, typically an empty directory.
 # @hera --init@ to install the core structure and generate the config files.
+    ## _hera_config.yml is created to use as a config for generating the guard and rake files.
+    ## Guardfile is created to watch the haml and sass source directories.
+    ## Rakefile is created to house the automation scripts for guard, jekyll and rsync.
 # @hera --watch@ to start watching and auto-compiling your source.
 # Within @_source/_layouts@ you can edit the templates:
     ## @/haml@ contains the main Jekyll layout templates.
