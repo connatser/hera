@@ -4,6 +4,8 @@ h2. What is Hera?
 
 "Hera":http://connatser.github.com/hera/, from HydraulicLabs, is an elegant and easy to use static web site architecture. Implementing Jekyll, Haml, Sass, & Jammit to bring a static website to life fast. Hera was developed to reduce setup time, promote clean code, and instantly set up the typical dependencies when working with popular web frameworks.
 
+Now follow Hera on Twitter at "@herasites":http://twitter.com/herasites for easy access to gem and source updates.
+
 h2. How to use Hera.
 
 Install the gem:
