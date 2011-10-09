@@ -80,7 +80,7 @@ body{padding-top:20px}.container
 }
 
 #body_paragraph_top{
-  font-family: "galette";
+  font-family: Verdana, Geneva, Arial, Helvetica, sans-serif;
   position: relative;
   left: 150px;
   top: 5px;
@@ -90,7 +90,7 @@ body{padding-top:20px}.container
 }
 
 #body_paragraph_bottom{
-  font-family: "galette";
+  font-family: Verdana, Geneva, Arial, Helvetica, sans-serif;
   position: relative;
   top: 5px;
   height: 100px;
