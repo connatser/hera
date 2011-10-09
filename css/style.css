@@ -25,5 +25,95 @@
   text-shadow: 0 0 0.1em #DDDDDD;
 }
 html,body{background-color:#FFFFFF}
-body{padding-top:20px}.container>
-footer p{text-align:center}.container{width:529px}.content{background-color:#fff;padding:20px;margin:0 -20px;-webkit-border-radius:0 0 6px 6px;-moz-border-radius:0 0 6px 6px;border-radius:0 0 6px 6px;-webkit-box-shadow:0 1px 2px rgba(0,0,0,0.15);-moz-box-shadow:0 1px 2px rgba(0,0,0,0.15);box-shadow:0 1px 2px rgba(0,0,0,0.15)}.page-header{background-color:#f5f5f5;padding:20px 20px 10px;margin:-20px -20px 20px}.content .span10,.content .span4{min-height:500px}.content .span4{margin-left:0;padding-left:19px;border-left:1px solid #eee}.topbar .btn{border:0}a{color:#333333}a:hover{color:#333333}a:visited{color:#333333}
+body{padding-top:20px}.container
+
+#body_top{
+  position: relative;
+  top: 20;
+  height: 445px;
+  width: 529px;
+}
+
+#body_mid{
+  top: -100px;
+  position: relative;
+  height: 222px;
+  width: 529px;
+}
+
+#body_mid_left{
+  float: left; 
+  width: 212px; 
+}
+
+#gem_install{
+  position: relative;
+  top: 100px;
+  width: 212px;
+  text-align: center;
+  font-family: Verdana, Geneva, Arial, Helvetica, sans-serif;
+  color: #4d2f5d;
+}
+
+#gem_location_container{
+  position: relative;
+  top: 100px;
+  width: 212px;
+  text-align: center; 
+}
+
+#gem_location{
+  position: relative;
+  left: 29px;
+  width: 145px;
+  text-align: center; 
+  background-color:#f2d9ff;
+  padding:.25em; 
+  font-family: Verdana, Geneva, Arial, Helvetica, sans-serif;
+  font-size: 12px;
+  font-weight: bold;
+}
+
+#body_mid_right{
+  float: right; 
+  width: 317px; 
+}
+
+#body_paragraph_top{
+  font-family: galette;
+  position: relative;
+  left: 150px;
+  top: 5px;
+  height: 90px;
+  width: 157px;
+  color: #4d2f5d;
+}
+
+#body_paragraph_bottom{
+  font-family: galette;
+  position: relative;
+  top: 5px;
+  height: 100px;
+  width: 317px;
+  color: #4d2f5d;
+}
+
+#body_bottom{
+  color:#999999;
+  top: -100px;
+  width: 529px;
+  text-align: center;
+  position: relative;
+  font-family: Verdana, Geneva, Arial, Helvetica, sans-serif;
+  font-size: 11px;
+}
+
+#body_bottom a{color:#999999}
+#body_bottom a:active{color:#999999}
+#body_bottom a:visited{color:#999999}
+
+footer p{text-align:center}.container{width:529px}.content{background-color:#fff;padding:20px;margin:0 -20px;-webkit-border-radius:0 0 6px 6px;-moz-border-radius:0 0 6px 6px;border-radius:0 0 6px 6px;-webkit-box-shadow:0 1px 2px rgba(0,0,0,0.15);-moz-box-shadow:0 1px 2px rgba(0,0,0,0.15);box-shadow:0 1px 2px rgba(0,0,0,0.15)}.page-header{background-color:#f5f5f5;padding:20px 20px 10px;margin:-20px -20px 20px}.content .span10,.content .span4{min-height:500px}.content .span4{margin-left:0;padding-left:19px;border-left:1px solid #eee}.topbar .btn{border:0}
+
+a{color:#333333}
+a:hover{color:#333333}
+a:visited{color:#333333}
