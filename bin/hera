@@ -21,6 +21,8 @@ Basic Command Line Usage:
 
 HELP
 
+site_type = ARGV[1]
+
 exec = {}
 options = {}
 opts = OptionParser.new do |opts|
@@ -63,7 +65,7 @@ if options['generate']
 end
 
 if options['init']
-  init_hera = InitHera.new
+  init_hera = InitHera.new(:site_type => site_type)
 end
 
 if options['watch']

@@ -29,7 +29,7 @@ module Hera
     
     def self.create_config
       #In case a config isn't present this will generate the base _hera_config.yml.
-      puts "Generating _hera_config.yml, which is you can customize to your needs."
+      puts "Generating _hera_config.yml, which you can customize to your needs."
       File.open( "_hera_config.yml", "w" ) do |the_file|        
         the_file.puts "jekyll:"
         the_file.puts "  id: haml_jekyll"

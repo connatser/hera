@@ -10,4 +10,3 @@ gem "jammit", "~> 0.6.3"
 gem "jekyll", "~> 0.11.0"
 gem "rb-fsevent", "~> 0.4.3.1"
 gem "sass", "~> 3.1.7"
-
