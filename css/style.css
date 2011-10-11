@@ -48,7 +48,7 @@ body{padding-top:20px}.container
 
 #gem_install{
   position: relative;
-  top: 100px;
+  top: 75px;
   width: 212px;
   text-align: center;
   font-family: Verdana, Geneva, Arial, Helvetica, sans-serif;
@@ -57,12 +57,40 @@ body{padding-top:20px}.container
 
 #gem_location_container{
   position: relative;
-  top: 100px;
+  top: 75px;
   width: 212px;
   text-align: center; 
 }
 
 #gem_location{
+  position: relative;
+  left: 29px;
+  width: 145px;
+  text-align: center; 
+  background-color:#f2d9ff;
+  padding:.25em; 
+  font-family: Verdana, Geneva, Arial, Helvetica, sans-serif;
+  font-size: 12px;
+  font-weight: bold;
+}
+
+#learn_hera{
+  position: relative;
+  top: 90px;
+  width: 212px;
+  text-align: center;
+  font-family: Verdana, Geneva, Arial, Helvetica, sans-serif;
+  color: #4d2f5d;
+}
+
+#learn_hera_container{
+  position: relative;
+  top: 90px;
+  width: 212px;
+  text-align: center; 
+}
+
+#learn_hera_location{
   position: relative;
   left: 29px;
   width: 145px;
