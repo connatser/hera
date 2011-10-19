@@ -121,6 +121,16 @@ module Hera
             the_file.puts "    do [ -e $f ] && " + node['type'] + " $f " + node['prod'] + "${f%." + node['ext'] +"}." + $ext_type +"; done"
             the_file.puts "  })"
             the_file.puts "end"
+
+            #Check if source directory exists and create it if note
+            if (!File.directory? Dir.pwd + "/" + node['src'])
+              Dir.mkdir(Dir.pwd + "/" + node['src'])
+            end
+
+            #Check if production directory exists and create it if note
+            if (!File.directory? Dir.pwd + "/" + node['src'] + node['prod'])
+              Dir.mkdir(Dir.pwd + "/" + node['src'] + node['prod'])
+            end
         }  
       end 
     end
